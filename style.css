@@ -1,0 +1,338 @@
+html {
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+    /* background-color: blanchedalmond; */
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+.page {
+    width: 800px;
+    margin: 20px auto;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    background-color: white;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 10px;
+    flex-direction: column;
+    border-right: 1px black solid;
+    background-color: white;
+}
+
+/*Header*/
+
+.header {
+    width: 800px;
+    height: 200px;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-image: url(img/news.jpg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+    
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.header-subtitle {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+}
+
+/* .header-img {
+    width: 798px;
+} */
+
+/* Navigate */
+
+.navigate {
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color: rgb(255, 227, 184);
+}
+
+/* Content */
+
+.content {
+    display: flex;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main-title {
+    margin: 0 0 15px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.main-text {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+
+}
+
+.read-more {
+    text-decoration: none;
+    color: #523634;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Table */
+
+.table {
+    border: 1px 0px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.table td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+/* Article */
+
+.article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-bottom: 20px;
+}
+
+.article-title {
+    margin: 0 0 5px;
+    color: #B6452C;
+    font-size: 18px;
+}
+
+.article-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article-title a:hover {
+    text-decoration: underline;
+}
+
+.article-date {
+    color: gray;
+    font-size: 12px;
+}
+
+/* Form */
+.form {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: #f4f8fd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+.form-title {
+    margin: 0 0 15px;
+}
+
+.form-input {
+    display: block;
+    width: 450px;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: rgb(174, 255, 255);
+}
+
+.form-textarea {
+    display: block;
+    width: 450px;
+    min-height: 100px;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 15px;
+    resize: vertical;
+}
+
+input {
+    font-style: italic;
+    font-family: inherit;
+}
+
+/* Auth */
+
+.auth {
+    width: 360px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: ivory;
+}
+
+.auth-title {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.auth-input {
+    display: block;
+    width: 338px;
+    padding: 8px 10px;
+    border: solid 1px black;
+}  
+
+.auth-input:focus {
+    outline: 0;
+    border-color: orangered
+}
+
+.auth-group {
+    margin-bottom: 15px;
+}
+
+.auth-select {
+    display: block;
+    width: 360px;
+    border: solid 1px black;
+    height: 33px;
+    background-color: white;
+}
+
+.auth-button-ok {
+    height: 33px;
+    width: 175px;
+    background-color: yellowgreen;
+    color: white;
+    font-family: inherit;
+    border: 1px solid black;
+    padding: 5px 10px;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.auth-button-ok:hover {
+    background-color: rgb(119, 158, 41);
+    color: black;
+    cursor: pointer;
+}
+
+.auth-button-reset {
+    height: 33px;
+    width: 175px;
+    background-color: rgb(228, 0, 0);
+    color: white;
+    font-family: inherit;
+    border: 1px solid black;
+    padding: 5px 10px;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.auth-button-reset:hover {
+    background-color: rgb(173, 0, 0);
+    color: black;
+    cursor: pointer;
+}
+
+/* Button */
+
+.button {
+    padding: 5px 10px;
+    background-color: coral;
+    border: 1px solid black;
+    transition: background 0.2s linear, color 0.2s linear, padding 0.2s linear;
+}
+
+.button:hover {
+    background-color: rgb(60, 0, 199);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.submit {
+    color: black;
+    padding: 5px 10px;
+    background-color: rgb(42, 190, 55);
+    border: 1px solid black;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.submit:hover {
+    background-color: rgb(36, 161, 46);
+    color: white;
+    cursor: pointer;
+}
+
+.reset {
+    padding: 5px 10px;
+    background-color: red;
+    border: 1px black solid;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.reset:hover {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: rgb(143, 143, 143);
+    font-weight: bold;
+}
