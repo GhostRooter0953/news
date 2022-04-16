@@ -24,9 +24,18 @@ body {
     animation: rotate 60s infinite;
 }
 
-/* a::before {
-    content: url(img/svast.png);
-} */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/svast.png);
+    background-size: 20px 20px;
+    margin: 0 auto;
+    animation: rotate 10s infinite;
+}
 
 @keyframes rotate {
     from {
@@ -96,6 +105,7 @@ body {
 }
 
 .nav-link {
+    position: relative;
     display: inline-block;
     padding: 15px 40px;
     text-decoration: none;
