@@ -84,6 +84,12 @@ body {
     }
 }
 
+.audio {
+    padding-top: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
 .page {
     width: 800px;
     margin: 20px auto;
